@@ -28,7 +28,7 @@ class ControlBar extends Component {
       default:
         break;
     }
-    this.props.togglePlayPause(mb, activeScreen);
+    this.props.togglePlayPause();
     this.props.setActiveScreen(nextScreen);
   };
   render() {
@@ -54,7 +54,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  togglePlayPause: (mb, activeScreen) => dispatch(togglePlayPause(mb, activeScreen)),
+  togglePlayPause: () => dispatch(togglePlayPause()),
   setActiveScreen: (screen) => dispatch(setActiveScreen(screen))
 });
 

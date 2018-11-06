@@ -8,10 +8,8 @@ export const setActiveScreen = screen => ({
   screen
 });
 
-export const togglePlayPause = (mb, activeScreen) => ({
-  type: 'TOGGLE_PLAY_PAUSE',
-  mb: mb,
-  activeScreen: activeScreen
+export const togglePlayPause = () => ({
+  type: 'TOGGLE_PLAY_PAUSE'
 });
 
 export const screenList = {

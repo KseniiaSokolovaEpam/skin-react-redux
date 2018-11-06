@@ -65,8 +65,8 @@ OO.plugin('Html5Skin', function(OO) {
     onPaused: function() {},
     onPause: function() {},
     onPlayed: function() {
+      store.dispatch(togglePlayPause());
       store.dispatch(setActiveScreen(screenList.END_SCREEN));
-      store.dispatch(togglePlayPause(this.mb, screenList.PLAY_SCREEN));
     },
 
     createProvider: function(elementId) {
