@@ -7,8 +7,8 @@ import Player from './containers/Player';
 import { addPlayerInfo, setActiveScreen, togglePlayPause } from './store/actions';
 import { screenList } from './store/actions';
 
+import './styles/index.scss';
 
-import './styles/index.css';
 const store = createStore(rootReducer);
 
 if (!window.OO) {
